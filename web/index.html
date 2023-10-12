@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <meta charset ="utf-8">
+        <title> Murach's Java Servlets and JSP</title>
+        <link rel="stylesheet" href="main.css" type="text/css"/>
+    </head >
+    <body>
+        <img src="logo.jpg" alt="Logo" width="128" height="128">
+        <h1> Survey </h1>
+        <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+        <h2> Your information: </h2>
+        <form action="emailList" method="post">
+        <input type="hidden" name="action" value = "add">
+        
+        <label class="gr1">First Name:</label>
+        <input type="text" name="firstName" required><br>
+        <label class="gr1"> Last Name: </label>
+        <input type="text" name="lastName" required><br>
+        <label class="gr1"> Email:</label>
+        <input type="email" name="email" required><br>
+        <label class="gr1"> Date of birth:</label>
+        <input type="date" name="birth" required><br>
+        
+        <h2> How did you hear about us? </h2>
+        <input type="radio" id="se" name="hear" value="Search engine" checked/>
+        <label for="se">Search engine</label>
+        <input type="radio" id="wm" name="hear" value="Word of mouth" />
+        <label for="wm">Word of mouth</label>
+        <input type="radio" id="sm" name="hear" value="Social Media" />
+        <label for="sm">Social Media</label>
+        <input type="radio" id="ot" name="hear" value="Other" />
+        <label for="ot">Other</label><br>
+        
+        <h2> Would you like to receive announcements about new CDs and special offers? </h2>
+        <input type="checkbox" id="yes1" name="receive" value="YES, I'd like that.">
+        <label for="yes1"> YES, I'd like that.</label><br>
+        <input type="checkbox" id="yes2" name="receive" value="YES, please send me email announcements.">
+        <label for="yes2"> YES, please send me email announcements.</label><br>
+        
+        <br>
+        <label for="contact">Please contact me by:</label>
+        <select name="contact" id="contact">
+            <option value="Email or postal mail">Email or postal mail</option>
+            <option value="Email only">Email only</option>
+            <option value="Postal mail only">Postal mail only</option>
+        </select><br><br>
+        <label>&nbsp;</label>
+        <input type="submit" value="Submit" id="submit">
+        </form>
+    </body>
+</html>
